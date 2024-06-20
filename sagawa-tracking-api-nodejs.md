@@ -1,12 +1,12 @@
-Australia Post Tracking API - Node.js
+Sagawa Tracking API - Node.js
 ================================
-Use Node.js to track Australia Post shipments with Australia Post Tracking API.
+Use Node.js to track Sagawa shipments with Sagawa Tracking API.
 
 Features
 --------
-- Real-time Australia Post tracking.
-- Batch Australia Post tracking.
-- Other features to manage your Australia Post tracking.
+- Real-time Sagawa tracking.
+- Batch Sagawa tracking.
+- Other features to manage your Sagawa tracking.
 
 Installation
 ------------
@@ -31,7 +31,7 @@ To use this API, you need to generate your API key.
 - Give a name to your API key, and click "Save" .
 
 
-Then, start to track your Australia Post shipments.
+Then, start to track your Sagawa shipments.
 
 Usage
 ----------
@@ -44,7 +44,7 @@ Create a tracking (Real-time tracking):
       
       const params = {
         'tracking_number': '0301006785462006320995',
-        'courier_code': 'australia-post',
+        'courier_code': 'sagawa',
         'order_number': '',
         'customer_name': '',
         'title': '',
@@ -64,10 +64,10 @@ Create trackings (Max. 40 tracking numbers create in one call):
     
     const params = [{
         'tracking_number': 'LK201223662AU',
-        'courier_code':'australia-post'
+        'courier_code':'sagawa'
     },{
       'tracking_number': 'LH290032509AU',
-      'courier_code':'australia-post'
+      'courier_code':'sagawa'
     }]
     trackingmore.trackings.batchCreateTrackings(params)
       .then(result => console.log(result))
@@ -84,10 +84,10 @@ Get status of the shipment:
     # Perform queries based on various conditions
     const params = [{
         'tracking_number': 'LH290032509AU',
-        'courier_code':'australia-post'
+        'courier_code':'sagawa'
     },{
       'tracking_number': 'LK201223662AU',
-      'courier_code':'australia-post'
+      'courier_code':'sagawa'
     }]
     trackingmore.trackings.batchCreateTrackings(params)
       .then(result => console.log(result))
