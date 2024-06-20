@@ -1,12 +1,12 @@
-Australia Post Tracking API - Go
+Sagawa Tracking API - Go
 ================================
-Use Go to track Australia Post shipments with Australia Post Tracking API.
+Use Go to track Sagawa shipments with Sagawa Tracking API.
 
 Features
 --------
-- Real-time Australia Post tracking.
-- Batch Australia Post tracking.
-- Other features to manage your Australia Post tracking.
+- Real-time Sagawa tracking.
+- Batch Sagawa tracking.
+- Other features to manage your Sagawa tracking.
 
 Installation
 ------------
@@ -32,7 +32,7 @@ To use this API, you need to generate your API key.
 - Give a name to your API key, and click "Save" .
 
 
-Then, start to track your Australia Post shipments.
+Then, start to track your Sagawa shipments.
 
 Usage
 ----------
@@ -58,7 +58,7 @@ Create a tracking (Real-time tracking):
       
       params := trackingmore.CreateTrackingParams{
         TrackingNumber: "0301006785462006320995",
-        CourierCode:    "australia-post",
+        CourierCode:    "sagawa",
       }      
 
       result, err := cli.CreateTracking(context.Background(), params)
@@ -93,11 +93,11 @@ Create trackings (Max. 40 tracking numbers create in one call):
       params := []trackingmore.CreateTrackingParams{
           {
           TrackingNumber: "LK201223662AU",
-          CourierCode:    "australia-post",
+          CourierCode:    "sagawa",
           },
           {
           TrackingNumber: "LH290032509AU",
-          CourierCode:    "australia-post",
+          CourierCode:    "sagawa",
           },
       }   
 
